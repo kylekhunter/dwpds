@@ -34,5 +34,28 @@ namespace nothinbutdotnetstore.specs
       static bool result;
       static IContainRequestInformation request;
     }
+
+    public class when_processing_a_request : concern
+    {
+      Establish c = () =>
+      {
+        request = fake.an<IContainRequestInformation>();
+        application_command = depends.on<IProcessAnApplicationSpecificBehaviour>();
+      };
+
+      Because b = () =>
+        sut.run(request);
+
+
+
+      It should_delegate_to_the_application_specific_behaviour = () =>
+        application_command.received(x => x.run(request));
+
+
+
+      static bool result;
+      static IContainRequestInformation request;
+      static IProcessAnApplicationSpecificBehaviour application_command;
+    }
   }
 }

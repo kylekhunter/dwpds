@@ -84,6 +84,7 @@
     <Compile Include="web\core\IContainRequestInformation .cs" />
     <Compile Include="web\core\ICreateRequests.cs" />
     <Compile Include="web\core\IFindCommands.cs" />
+    <Compile Include="web\core\IProcessAnApplicationSpecificBehaviour .cs" />
     <Compile Include="web\core\IProcessIncomingRequests.cs" />
     <Compile Include="web\core\IProcessRequestInformation .cs" />
     <Compile Include="web\core\MissingCommandFactory.cs" />
