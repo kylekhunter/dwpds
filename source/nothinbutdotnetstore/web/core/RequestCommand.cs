@@ -4,14 +4,21 @@ namespace nothinbutdotnetstore.web.core
 {
   public class RequestCommand : IProcessRequestInformation
   {
-    public void run(IContainRequestInformation request)
+      private readonly RequestCriteria request_criteria;
+
+      public RequestCommand(RequestCriteria request_criteria)
+      {
+          this.request_criteria = request_criteria;
+      }
+
+      public void run(IContainRequestInformation request)
     {
       throw new NotImplementedException();
     }
 
     public bool can_process(IContainRequestInformation request)
     {
-      throw new NotImplementedException();
+       return request_criteria(request);
     }
   }
 }
