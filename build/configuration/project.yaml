@@ -7,3 +7,4 @@ app_dir: source/nothinbutdotnetstore.web.ui
 log_file_name: NBDNStoreLog.txt
 log_level: DEBUG
 cool_setting: This is cool
+new_property: this is a new setting
