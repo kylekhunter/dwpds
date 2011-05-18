@@ -79,8 +79,12 @@
   <ItemGroup>
     <Compile Include="Calculator.cs" />
     <Compile Include="MessageGenerator.cs" />
+    <Compile Include="web\core\FrontController.cs" />
+    <Compile Include="web\core\IContainRequestInformation .cs" />
     <Compile Include="web\core\ICreateRequests.cs" />
+    <Compile Include="web\core\IFindCommands.cs" />
     <Compile Include="web\core\IProcessIncomingRequests.cs" />
+    <Compile Include="web\core\IProcessRequestInformation .cs" />
     <Compile Include="web\core\RawHandler.cs" />
   </ItemGroup>
   <ItemGroup />
