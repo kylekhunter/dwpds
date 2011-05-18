@@ -19,13 +19,16 @@ namespace nothinbutdotnetstore.specs
     {
       Establish c = () =>
       {
-        department = depends.on<DepartmentItem>();
         store_catalog = depends.on<ICanFindDetailsInTheStore>();
         display_engine = depends.on<ICanRenderInformation>();
+
+        parent_department = fake.an<DepartmentItem>();
         request = fake.an<IContainRequestInformation>();
         sub_departments = new List<DepartmentItem> {new DepartmentItem()};
 
-        store_catalog.setup(x => x.get_departments_for(department)).Return(sub_departments);
+        request.setup(x => x.map<DepartmentItem>()).Return(parent_department);
+
+        store_catalog.setup(x => x.get_departments_for(parent_department)).Return(sub_departments);
       };
 
       Because b = () =>
@@ -33,7 +36,6 @@ namespace nothinbutdotnetstore.specs
 
       It should_get_the_list_of_departments_for_a_given_department = () =>
       {
-
       };
 
       It should_tell_the_display_engine_to_display_the_departments = () =>
@@ -42,8 +44,8 @@ namespace nothinbutdotnetstore.specs
       static IContainRequestInformation request;
       static ICanRenderInformation display_engine;
       static ICanFindDetailsInTheStore store_catalog;
-      static DepartmentItem department;
-      static List<DepartmentItem> sub_departments;
+      static DepartmentItem parent_department;
+      static IEnumerable<DepartmentItem> sub_departments;
     }
   }
 }

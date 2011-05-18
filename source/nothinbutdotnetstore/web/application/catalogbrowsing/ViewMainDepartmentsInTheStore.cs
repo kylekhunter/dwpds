@@ -7,7 +7,6 @@ namespace nothinbutdotnetstore.web.application.catalogbrowsing
   public class ViewMainDepartmentsInTheStore : IProcessAnApplicationSpecificBehaviour
   {
     ICanFindDetailsInTheStore store_catalog;
-
     ICanRenderInformation display_engine;
 
     public ViewMainDepartmentsInTheStore():this(new StubStoreCatalog(),
