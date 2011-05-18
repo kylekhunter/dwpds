@@ -4,7 +4,7 @@ namespace nothinbutdotnetstore.web.core.stubs
 {
   public class StubMissingRequest
   {
-    public static IProcessRequestInformation create()
+    public IProcessRequestInformation create()
     {
       throw new NotImplementedException();
     }

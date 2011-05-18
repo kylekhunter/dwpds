@@ -1,4 +1,4 @@
-using nothinbutdotnetstore.specs;
+using nothinbutdotnetstore.infrastructure;
 using nothinbutdotnetstore.web.application.catalogbrowsing.stubs;
 using nothinbutdotnetstore.web.core;
 using nothinbutdotnetstore.web.core.stubs;
@@ -10,7 +10,7 @@ namespace nothinbutdotnetstore.web.application.catalogbrowsing
     ICanFindDetailsInTheStore store_catalog;
     ICanRenderInformation display_engine;
 
-    public ViewMainDepartmentsInTheStore():this(StubGateway.GetStub<StubStoreCatalog>(),
+    public ViewMainDepartmentsInTheStore():this(Stub.with<StubStoreCatalog>(),
       new StubDisplayEngine())
     {
     }
