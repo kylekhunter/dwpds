@@ -114,6 +114,7 @@
     <Compile Include="MessageGeneratorSpecs.cs" />
     <Compile Include="RawHandlerSpecs.cs" />
     <Compile Include="RequestCommandSpecs.cs" />
+    <Compile Include="StubGatewaySpecs.cs" />
     <Compile Include="utility\ObjectFactory.cs" />
     <Compile Include="ViewMainDepartmentsInTheStoreSpecs.cs" />
     <Compile Include="ViewTheDepartmentsInADepartmentSpecs.cs" />
