@@ -79,8 +79,13 @@
   <ItemGroup>
     <Compile Include="Calculator.cs" />
     <Compile Include="MessageGenerator.cs" />
+    <Compile Include="web\application\catalogbrowsing\DepartmentItem.cs" />
+    <Compile Include="web\application\catalogbrowsing\ICanFindDetailsInTheStore.cs" />
+    <Compile Include="web\application\catalogbrowsing\stubs\StubStoreCatalog.cs" />
+    <Compile Include="web\application\catalogbrowsing\ViewMainDepartmentsInTheStore.cs" />
     <Compile Include="web\core\CommandRegistry.cs" />
     <Compile Include="web\core\FrontController.cs" />
+    <Compile Include="web\core\ICanRenderInformation.cs" />
     <Compile Include="web\core\IContainRequestInformation .cs" />
     <Compile Include="web\core\ICreateRequests.cs" />
     <Compile Include="web\core\IFindCommands.cs" />
@@ -91,6 +96,10 @@
     <Compile Include="web\core\RawHandler.cs" />
     <Compile Include="web\core\RequestCommand.cs" />
     <Compile Include="web\core\RequestCriteria.cs" />
+    <Compile Include="web\core\stubs\StubDisplayEngine.cs" />
+    <Compile Include="web\core\stubs\StubMissingRequest.cs" />
+    <Compile Include="web\core\stubs\StubRequestFactory.cs" />
+    <Compile Include="web\core\stubs\StubSetOfCommands.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
