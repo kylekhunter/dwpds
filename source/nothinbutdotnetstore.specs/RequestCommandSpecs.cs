@@ -19,8 +19,8 @@ namespace nothinbutdotnetstore.specs
     {
       Establish c = () =>
       {
-        depends.on<RequestCriteria>(x => x.Equals(request));
         request = fake.an<IContainRequestInformation>();
+        depends.on<RequestCriteria>(x => x.Equals(request));
       };
 
       Because b = () =>
