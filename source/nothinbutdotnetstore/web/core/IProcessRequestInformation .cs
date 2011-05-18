@@ -1,8 +1,7 @@
 namespace nothinbutdotnetstore.web.core
 {
-  public interface IProcessRequestInformation 
+  public interface IProcessRequestInformation  : IProcessAnApplicationSpecificBehaviour
   {
-    void run(IContainRequestInformation request);
     bool can_process(IContainRequestInformation request);
   }
 }
