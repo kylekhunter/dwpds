@@ -16,8 +16,7 @@ namespace nothinbutdotnetstore.web.core
 
     public IProcessRequestInformation get_the_command_that_can_process(IContainRequestInformation request)
     {
-      var result =  process_request_commands.FirstOrDefault(x => x.can_process(request));
-      return result ?? missing_command_factory();
+      return process_request_commands.FirstOrDefault(x => x.can_process(request)) ?? missing_command_factory();
     }
   }
 }

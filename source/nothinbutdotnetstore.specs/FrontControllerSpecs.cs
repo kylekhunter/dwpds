@@ -31,6 +31,11 @@ namespace nothinbutdotnetstore.specs
       Because b = () =>
         sut.process(request);
 
+      It should_ask_the_command_registry_for_the_command = () =>
+      {
+
+      };
+  
 
 
       It should_delegate_the_processing_to_the_command_that_can_process_the_request = () =>
