@@ -86,6 +86,7 @@
     <Compile Include="web\core\IFindCommands.cs" />
     <Compile Include="web\core\IProcessIncomingRequests.cs" />
     <Compile Include="web\core\IProcessRequestInformation .cs" />
+    <Compile Include="web\core\MissingCommandFactory.cs" />
     <Compile Include="web\core\RawHandler.cs" />
   </ItemGroup>
   <ItemGroup />
