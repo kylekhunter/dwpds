@@ -83,6 +83,7 @@
     <Compile Include="web\application\catalogbrowsing\ICanFindDetailsInTheStore.cs" />
     <Compile Include="web\application\catalogbrowsing\stubs\StubStoreCatalog.cs" />
     <Compile Include="web\application\catalogbrowsing\ViewMainDepartmentsInTheStore.cs" />
+    <Compile Include="web\application\catalogbrowsing\ViewTheDepartmentsInADepartment.cs" />
     <Compile Include="web\core\CommandRegistry.cs" />
     <Compile Include="web\core\FrontController.cs" />
     <Compile Include="web\core\ICanRenderInformation.cs" />
