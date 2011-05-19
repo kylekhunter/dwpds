@@ -11,7 +11,7 @@ namespace nothinbutdotnetstore.web.application.catalogbrowsing
     ICanRenderInformation display_engine;
 
     public ViewMainDepartmentsInTheStore():this(Stub.with<StubStoreCatalog>(),
-      new StubDisplayEngine())
+      new WebFormDisplayEngine())
     {
     }
 

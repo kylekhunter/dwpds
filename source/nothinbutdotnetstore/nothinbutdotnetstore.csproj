@@ -86,6 +86,13 @@
     <Compile Include="web\application\catalogbrowsing\ViewMainDepartmentsInTheStore.cs" />
     <Compile Include="web\application\catalogbrowsing\ViewTheDepartmentsInADepartment.cs" />
     <Compile Include="web\core\aspnet\ICreateAnAspxTemplateForAReportModel .cs" />
+    <Compile Include="web\core\aspnet\IFindAspxPagesForReportModels.cs" />
+    <Compile Include="web\core\aspnet\IReportModelBoundAspx .cs" />
+    <Compile Include="web\core\aspnet\PageFactory.cs" />
+    <Compile Include="web\core\aspnet\SimpleView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\core\aspnet\WebFormFactory.cs" />
     <Compile Include="web\core\CommandRegistry.cs" />
     <Compile Include="web\core\CurrentContextResolver.cs" />
     <Compile Include="web\core\FrontController.cs" />
@@ -98,10 +105,10 @@
     <Compile Include="web\core\IProcessRequestInformation .cs" />
     <Compile Include="web\core\MissingCommandFactory.cs" />
     <Compile Include="web\core\RawHandler.cs" />
+    <Compile Include="web\core\stubs\StubPathRegistry.cs" />
     <Compile Include="web\core\WebFormDisplayEngine.cs" />
     <Compile Include="web\core\RequestCommand.cs" />
     <Compile Include="web\core\RequestCriteria.cs" />
-    <Compile Include="web\core\stubs\StubDisplayEngine.cs" />
     <Compile Include="web\core\stubs\StubMissingRequest.cs" />
     <Compile Include="web\core\stubs\StubRequestFactory.cs" />
     <Compile Include="web\core\stubs\StubSetOfCommands.cs" />
