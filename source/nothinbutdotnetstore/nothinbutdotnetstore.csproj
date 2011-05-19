@@ -82,8 +82,10 @@
     <Compile Include="MessageGenerator.cs" />
     <Compile Include="web\application\catalogbrowsing\DepartmentItem.cs" />
     <Compile Include="web\application\catalogbrowsing\ICanFindDetailsInTheStore.cs" />
+    <Compile Include="web\application\catalogbrowsing\ProductItem.cs" />
     <Compile Include="web\application\catalogbrowsing\stubs\StubStoreCatalog.cs" />
     <Compile Include="web\application\catalogbrowsing\ViewMainDepartmentsInTheStore.cs" />
+    <Compile Include="web\application\catalogbrowsing\ViewProducts.cs" />
     <Compile Include="web\application\catalogbrowsing\ViewTheDepartmentsInADepartment.cs" />
     <Compile Include="web\core\aspnet\ICreateAnAspxTemplateForAReportModel .cs" />
     <Compile Include="web\core\aspnet\IFindAspxPagesForReportModels.cs" />

@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculatorSpecs.cs" />
+    <Compile Include="ViewProductsSpecs.cs" />
     <Compile Include="WebFormDisplayEngineSpecs.cs" />
     <Compile Include="CommandRegistrySpecs.cs" />
     <Compile Include="FrontControllerSpecs.cs" />
